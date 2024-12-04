@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+*{
+    color: rgb(0, 0, 0);
+    font-family:"Lato",
+        sans-serif; 
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+}
+h1,h2,h3,h4,h5,h6,span{
+    color: #242424;
+    text-align: center;
+    line-height: 1.25;
+}
+h1{
+    font-size: 40px;
+    margin: 30px;
+   
+}
+p{
+    line-height: 1.25;
+    font-size: 18px;
+
+
+}
+li{
+    list-style-type: none;
+}
+
+/*NAVIGATION  BAR */
+
+nav{
+    height: 100px;
+    max-width:100% ;
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+
+
+}
+.nav_link--list{
+    display: flex;
+
+}
+
+.nav_link_anchor{
+    margin: 0 12px;
+    color:#242424;
+    text-decoration: none;
+    font-weight: 700;
+
+}
+.nav_link--anchor-primary{
+    background-color: #6030b1;
+    padding: 8px 20px;
+    border-radius: 50px;
+    color: white;
+    transition: all 300ms ease;
+}
+.nav_link--anchor-primary:hover{
+    background-color: #5d3eff;
+}
+.personal_logo{
+    font-size: 24px;
+    color: #6030b1;
+    margin: 0 12px;
+    font-weight: bold;
+
+}
+.flex{
+    display: flex;
+
+}
+.flex-1{
+    flex:1;
+}
+.row {
+    width: 100%;
+    max-width:800px ;
+    margin: 0 auto;
+}
+
+.text--purple{
+    color: #6030b1;
+}
+/*AOUT ME*/
+
+
+#about-me{
+    min-height:100vh ;
+    display: flex;
+    flex-direction: column;
+
+
+}
+.about-me__info{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.about-me__info--container{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    
+}
+.about-me__picture--mask{
+    width: 115px;
+    height: 112px;
+    border-radius: 32%;
+    overflow: hidden;
+    box-shadow: 0 1px 13px #5d46d3 ;
+    margin-bottom: 20px;
+
+
+}
+.about-me__picture{
+    width: 100%;
+
+}
+.about-me__info--title{
+    margin-bottom: 13px;
+    margin-top: 20px;
+}
+.about-me__info--para{
+    font-size:20px;
+    margin-bottom: 28px;
+
+}
+.about-me__link {
+    display: flex;
+    gap: 45px;
+    margin: 25px;
+    font-size: 25px
+};
+   
+
+
+.about-me__link .icon {
+    text-decoration: none;
+    color: #000;
+    font-size: 30px;
+    transition: color 0.3s;
+}
+
+.about-me__link .icon:hover {
+    color: #c302ef;
+}
+.about-me__img--container{
+    flex:1;
+    margin: 16px;
+     padding: 39px;
+  
+     
+}
+.proramming--undraw{
+    width: 100%;
+  
+
+}
+
+
+
+/*......... Language ....... */
+
+.language{
+    width: 100%;
+    justify-content: center;
+    display: flex;
+    position: relative;
+}
+
+.language__img{
+       width: 100%;
+      transition: all 300ms;
+       max-width: 100px;
+       margin-bottom: 20px;
+
+        
+}
+
+.language__img:hover{
+
+    filter: brightness(80%);
+    opacity: 0.86;
+    transition: all 300ms ease;
+    transform: scale(0.9);
+    
+}
+.language__img--wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   padding: 25px 16px;
+}
+
+.language__list{
+    display: flex;
+    width:100%;
+    flex-wrap: wrap;
+    margin: auto;
+    /* height: fit-content; */
+}
+
+.language__name{
+    position:10px;
+    bottom: -5;
+    transform: scale(0);
+    transition: all 300ms;
+    font-size: 20px;
+    opacity: 2;
+
+}
+.language:hover .language__name{
+    transition:scale(1) ;
+    opacity: 1;
+
+}
+.section__title{
+    margin-top: 10px;
+}
+/* General container styling */
+#Projects {
+    padding: 50px 20px;
+    background-color: #f9f9f9; /* Light background for contrast */
+    text-align: center;
+}
+
+/* Section title styling */
+#section__title {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+#section__title .text--purple {
+    color: #6a0dad; /* Purple accent color */
+    font-weight: bold;
+}
+
+/* Project list styling */
+#project__list {
+    display: grid; /* Use grid for layout */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Flexible square grid */
+    gap: 20px; /* Space between items */
+    justify-items: center;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+/* Individual project block styling */
+#project__wrapper {
+    position: relative;
+    width: 300px; /* Square size */
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff; /* White background for contrast */
+    border-radius: 20px; /* Smooth rounded corners */
+    overflow: hidden;
+    box-shadow: 0 20px 80px rgba(0, 0, 0, 0.3); /* Add shadow for depth */
+    transition: box-shadow 0.4s ease, transform 0.4s ease;
+}
+
+/* Project image styling */
+.project__img {
+    width: 100%; /* Full size within square */
+    height: 100%;
+    object-fit: cover; /* Maintain aspect ratio, cover the block */
+    transition: transform 0.4s ease; /* Smooth hover effect */
+    z-index: 1; /* Below hover overlay */
+}
+
+/* Hover effects */
+#project__wrapper:hover {
+    box-shadow: 0 30px 100px rgba(0, 0, 0, 0.5); /* Darker shadow on hover */
+    transform: scale(1.05); /* Slight zoom on hover */
+}
+
+#project__wrapper:hover .project__img {
+    transform: scale(1.1); /* Zoom the image on hover */
+    filter: none; /* Ensure no blur or color change */
+}
+
+/* Project title overlay */
+#project__wrapper::after {
+    content: attr(data-title); /* Use the data-title attribute for the project name */
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
+    color: #fff; /* White text color */
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 10px;
+    opacity: 0; /* Hidden by default */
+    transform: translateY(20px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    z-index: 2;
+}
+
+#project__wrapper:hover::after {
+    opacity: 1; /* Show on hover */
+    transform: translateY(0); /* Slide up */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    #project__wrapper {
+        width: 100%;
+        height: auto; /* Maintain aspect ratio on small screens */
+    }
+
+    .project__img {
+        width: 100%;
+    }
+}
